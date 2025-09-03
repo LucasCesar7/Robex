@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robex</title>
+  <link rel="stylesheet" href="Portail2-alu.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="shortcut icon" href="/Assets/Image/LOGO ROBEX.png" type="image-logo" />
+</head>
+
+<body>
+  <header>
+    <div class="hamburger-menu" id="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <div class="navigation">
+        <ul class="nav-links" id="nav-links">
+          <li class="logo">
+            <a href="../../index.html"><img src="../../Assets/Image/LOGO ROBEX.png" alt="logo" width="150%" /></a>
+          </li>
+          <li class="list">
+            <a href="../../index.html">
+              <span class="icon"><i class="bx bx-home"></i></span>
+              <span class="text">Accueil</span>
+            </a>
+          </li>
+          <li class="list active">
+            <a href="../../produitETservice.html">
+              <span class="icon"><i class="bx bxs-shopping-bag"></i></span>
+              <span class="text">Produits/Services</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="../../À_propos_de_nous.html">
+              <span class="icon"><i class="bx bx-info-circle bx-flip-horizontal"></i></span>
+              <span class="text">À propos de nous</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="../../Contact.html">
+              <span class="icon"><i class="bx bx-user-pin bx-flip-horizontal"></i></span>
+              <span class="text">Contact</span>
+            </a>
+          </li>
+          <li class="rechercher">
+            <div class="loupe">
+              <i class="bx bx-search"></i>
+            </div>
+            <input type="search" id="search" placeholder="Recherche... 'grillage rigide'" required onchange="ouvrirPage()" />
+            <script src="../../recherche.js"></script>
+          </li>
+          <div class="box-phone">
+            <i class="bx bxs-phone"></i>
+            <span><strong><a href="tel:0604533437">06 04 53 34 37</a></strong></span>
+          </div>
+          <div class="indicateur"></div>
+        </ul>
+      </div>
+    </nav>
+    <script src="../../script.js"></script>
+    <script>
+      const list = document.querySelectorAll(".list");
+      function active() {
+        list.forEach((item) => item.classList.remove("active"));
+        this.classList.add("active");
+      }
+      list.forEach((item) => item.addEventListener("click", active));
+    </script>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+
+        <div class="details">
+            <h1>Portail ajouré</h1>
+            <p>🔑 Caractéristiques principales : <br><br>
+  
+              - Matériau : Aluminium haut de gamme, résistant à la corrosion et aux intempéries. <br><br>
+              - Design : Lames horizontales au style épuré pour un rendu contemporain et élégant.<br><br>
+              - Système coulissant : Mécanisme fluide pour une ouverture facile et silencieuse.<br><br>
+              - Sécurité : Équipé d'une serrure robuste et d'un système de verrouillage fiable.<br><br>
+              - Finition : Peinture thermolaquée gris anthracite pour une excellente tenue dans le temps.<br><br>
+  
+              🏡 Parfait pour :<br><br>
+              Maisons modernes, résidences privées ou propriétés nécessitant sécurité et esthétisme.<br><br>
+  
+              🚚 Livraison Rapide | 🛡️ Garantie 10 Ans | ♻️ 100% Recyclable <br><br>
+              Apportez élégance et sécurité à votre entrée avec ce portail coulissant en aluminium robuste et design !
+            </p>
+        </div> 
+
+        <div class="images">
+          <img id="mainImage" class="main-image" src="../../Assets/Image/Portails détourés/Portail2-alu.png"
+            alt="Produit">
+          <div class="thumbnail-container">
+            <img class="vignette" src="../../Assets/Image/Portails détourés/Portail2-alu.png"
+              onclick="changeImage('../../Assets/Image/Portails détourés/Portail2-alu.png')">
+            <img class="vignette" src="../../Assets/Image/Portail.jpg"
+              onclick="changeImage('../../Assets/Image/Portail.jpg')">
+            <img class="vignette" src="../../Assets/Image/Portail2.jpg"
+              onclick="changeImage('../../Assets/Image/Portail2.jpg')">  
+          </div>
+        </div> 
+        <div class="details2">
+          <div class="couleur">
+            <p>Couleur : gris anthracite</p>
+            <div class="carre"></div>
+          </div>
+          <div class="dimension">
+            <label for="height">Hauteur (m) :</label>
+            <select id="height" onchange="calculatePrice()">
+              <option value="1.5">1.5m</option>
+              <option value="1.8">1.8m</option>
+              <option value="2.0">2.0m</option>
+            </select>
+            <br>
+            <label for="width">Longueur (m) :</label>
+            <select id="width" onchange="calculatePrice()">
+              <option value="3.5">3.5m</option>
+              <option value="4">4m</option>
+              <option value="4.5">4.5m</option>
+              <option value="5">5m</option>
+              <option value="5.5">5.5m</option>
+            </select>
+          </div>
+          <p class="prix" id="prix">Prix : 2700.00 €</p>
+        </div>
+      </div>
+
+      <script>
+        function changeImage(src) {
+          document.getElementById('mainImage').src = src;
+        }
+
+        function calculatePrice() {
+          let height = parseFloat(document.getElementById('height').value);
+          let width = parseFloat(document.getElementById('width').value);
+
+          let priceMap = {
+            "1.5-3.5": 2700, "1.5-4": 3010, "1.5-4.5": 3330, "1.5-5": 3645, "1.5-5.5": 3959,
+            "1.8-3.5": 3140, "1.8-4": 3510, "1.8-4.5": 3890, "1.8-5": 4270, "1.8-5.5": 4651,
+            "2-3.5": 3430, "2-4": 3850, "2-4.5": 4270, "2-5": 4690, "2-5.5": 5110
+          };
+
+          let key = `${height}-${width}`;
+          let finalPrice = priceMap[key] || "Prix non disponible";
+
+          document.getElementById('prix').innerText = `Prix : ${finalPrice.toFixed ? finalPrice.toFixed(2) : finalPrice} €`;
+        }
+      </script>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p><a href="tel:0604533437">Téléphone : +33 6 04 53 34 37 </a><br><br> ou <br> <br>
+          <a href="tel:0651542222">+33 6 51 54 22 22</a>
+        </p>
+        <p>Email : robex.industry@gmail.com</p>
+        <p>Adresse : 843 Rte de Mirecourt, 88220 Xertigny</p>
+      </div>
+      <div class="footer-section">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="../../index.html">Accueil</a></li>
+          <li><a href="../../produitETservice.html">Produits/Services</a></li>
+          <li><a href="../../À_propos_de_nous.html">À propos de nous</a></li>
+          <li><a href="../../Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Suivez-nous</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100064048514149"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Robex. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

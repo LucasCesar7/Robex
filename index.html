@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robex</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="shortcut icon" href="/Assets/Image/LOGO ROBEX.png" type="image-logo" />
+</head>
+
+<body>
+  <header>
+    <div class="hamburger-menu" id="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <div class="navigation">
+        <ul class="nav-links" id="nav-links">
+          <li class="logo">
+            <a href="index.html"><img src="Assets/Image/LOGO ROBEX.png" alt="logo" width="150%" /></a>
+          </li>
+          <li class="list active">
+            <a href="index.html">
+              <span class="icon"><i class="bx bx-home"></i></span>
+              <span class="text">Accueil</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="produitETservice.html">
+              <span class="icon"><i class="bx bxs-shopping-bag"></i></span>
+              <span class="text">Produits/Services</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="À_propos_de_nous.html">
+              <span class="icon"><i class="bx bx-info-circle bx-flip-horizontal"></i></span>
+              <span class="text">À propos de nous</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="Contact.html">
+              <span class="icon"><i class="bx bx-user-pin bx-flip-horizontal"></i></span>
+              <span class="text">Contact</span>
+            </a>
+          </li>
+          <li class="rechercher">
+            <div class="loupe">
+              <i class="bx bx-search"></i>
+            </div>
+            <input type="search" id="search" placeholder="Recherche... 'grillage rigide'" required onchange="ouvrirPage()" />
+            <script src="recherche.js"></script>
+
+          </li>
+          <div class="box-phone">
+            <i class="bx bxs-phone"></i>
+            <span><strong><a href="tel:0604533437">06 04 53 34 37</a></strong></span>
+          </div>
+          <div class="indicateur"></div>
+        </ul>
+      </div>
+    </nav>
+    <script src="script.js"></script>
+    <script>
+      const list = document.querySelectorAll(".list");
+      function active() {
+        list.forEach((item) => item.classList.remove("active"));
+        this.classList.add("active");
+      }
+      list.forEach((item) => item.addEventListener("click", active));
+    </script>
+    </nav>
+  </header>
+
+  <section>
+    <div class="bannière">
+      <div class="texte-bienvenue">
+        <h1>Bienvenue chez Robex</h1>
+        <p>
+          Votre spécialiste du grillage et des portails modernes et durables.
+        </p>
+        <a href="produitETservice.html" class="bouton-produit">Découvrez nos produits</a>
+      </div>
+      <div class="highlights">
+        <div class="highlight-item">
+          <i class="fas fa-shipping-fast"></i>
+          <p>Livraison rapide</p>
+        </div>
+        <div class="highlight-item-2">
+          <i class="bx bxs-badge-dollar"></i>
+          <p>Prix imbattable</p>
+        </div>
+        <div class="highlight-item">
+          <i class="fas fa-star"></i>
+          <p>Qualité garantie</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-2">
+    <h1>Les réalisations de nos clients</h1>
+    <div class="slider-1">
+      <div class="slider">
+        <img class="slide-image" src="Assets/Image/template_1.jpg" alt="template 1" />
+        <img class="slide-image" src="Assets/Image/template_2.jpg" alt="template 2" />
+        <img class="slide-image" src="Assets/Image/template_3.webp" alt="template 3" />
+        <img class="slide-image" src="Assets/Image/template_4.jpg" alt="template 4" />
+        <img class="slide-image" src="Assets/Image/template_5.jpg" alt="template 5" />
+        <img class="slide-image" src="Assets/Image/template_1.jpg" alt="template 1" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section-3">
+    <div class="titre">
+      <h1>Notre objectif : faciliter vos travaux !</h1>
+      <div class="bulle">
+        <div class="bulle-item">
+          <h3>Facile à installer</h3>
+          <p>
+            Grâce à des solutions pratiques et intuitives, installez nos
+            produits en toute simplicité, même sans expertise technique !
+          </p>
+        </div>
+
+        <div class="bulle-item">
+          <h3>Une quincaillerie conçue pour vous !</h3>
+          <p>
+            ROBEX fournit tous les accessoires pour une clôture rigide durable
+            : platines, attaches et colliers adaptés !
+          </p>
+        </div>
+
+        <div class="bulle-item">
+          <h3>Votre futur projet, notre priorité !</h3>
+          <p>
+            Qu'il soit en cours d'idée ou déjà planifié, nous mettons tout en
+            œuvre pour accompagner vos ambitions !
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-4">
+    <div class="header-section4">
+      <h1>Pourquoi choisir Robex ?</h1>
+      <h2>
+        ROBEX, votre partenaire de confiance pour des solutions robustes et
+        adaptées à vos besoins.
+      </h2>
+      <p>
+        Chez ROBEX, nous nous engageons à fournir des produits de haute
+        qualité qui garantissent durabilité et fiabilité. Notre expertise nous
+        permet de vous accompagner dans vos projets en vous proposant des
+        solutions sur mesure et des accessoires adaptés à chaque situation.
+        Avec ROBEX, vous bénéficiez d’un service client à l’écoute, d’une
+        assistance technique efficace et de matériaux conçus pour durer, afin
+        de mener vos travaux en toute sérénité.
+      </p>
+    </div>
+    <div class="cards">
+      <div class="cards-item">
+        <h4>1. Produits haut de gamme</h4>
+        <p>
+          Robex vous offre une gamme variée de produits alliant qualité,
+          performance et design, adaptés à tous vos besoins en matière de
+          clôtures et accessoires.
+        </p>
+      </div>
+      <div class="cards-item">
+        <h4>2. Normes européennes garanties</h4>
+        <p>
+          Nos produits respectent toutes les exigences des normes européennes
+          pour vous garantir fiabilité et durabilité.
+        </p>
+      </div>
+      <div class="cards-item">
+        <h4>3. Innovation et Fiabilité</h4>
+        <p>
+          Alliant innovation et fiabilité, Robex propose des solutions
+          modernes et performantes, adaptées aux besoins évolutifs de ses
+          clients
+        </p>
+      </div>
+      <div class="cards-item">
+        <h4>4. Savoir-faire reconnu</h4>
+        <p>
+          Avec des années d’expérience, notre expertise vous accompagne à
+          chaque étape de votre projet.
+        </p>
+      </div>
+      <div class="cards-item">
+        <h4>5. Prix compétitifs</h4>
+        <p>
+          Profitez de la meilleure qualité au juste prix grâce à notre
+          engagement envers l’accessibilité.
+        </p>
+      </div>
+      <div class="cards-item">
+        <h4>6. Fiabilité assurée</h4>
+        <p>
+          Nous vous garantissons des produits solides, durables et conçus pour
+          répondre aux exigences les plus strictes, assurant une performance à
+          long terme pour vos projets.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p><a href="tel:0604533437">Téléphone : +33 6 04 53 34 37 </a><br><br> ou <br> <br>
+          <a href="tel:0651542222">+33 6 51 54 22 22</a>
+        </p>
+        <p>Email : robex.industry@gmail.com</p>
+        <p>Adresse : 843 Rte de Mirecourt, 88220 Xertigny</p>
+      </div>
+      <div class="footer-section">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="produitETservice.html">Produits/Services</a></li>
+          <li><a href="À_propos_de_nous.html">À propos de nous</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Suivez-nous</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100064048514149"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Robex. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

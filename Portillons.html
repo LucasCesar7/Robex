@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robex</title>
+  <link rel="stylesheet" href="Portillons.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="shortcut icon" href="/Assets/Image/LOGO ROBEX.png" type="image-logo" />
+</head>
+
+<body>
+  <header>
+    <div class="hamburger-menu" id="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <div class="navigation">
+        <ul class="nav-links" id="nav-links">
+          <li class="logo">
+            <a href="index.html"><img src="Assets/Image/LOGO ROBEX.png" alt="logo" width="150%" /></a>
+          </li>
+          <li class="list">
+            <a href="index.html">
+              <span class="icon"><i class="bx bx-home"></i></span>
+              <span class="text">Accueil</span>
+            </a>
+          </li>
+          <li class="list active">
+            <a href="produitETservice.html">
+              <span class="icon"><i class="bx bxs-shopping-bag"></i></span>
+              <span class="text">Produits/Services</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="À_propos_de_nous.html">
+              <span class="icon"><i class="bx bx-info-circle bx-flip-horizontal"></i></span>
+              <span class="text">À propos de nous</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="Contact.html">
+              <span class="icon"><i class="bx bx-user-pin bx-flip-horizontal"></i></span>
+              <span class="text">Contact</span>
+            </a>
+          </li>
+          <li class="rechercher">
+            <div class="loupe">
+              <i class="bx bx-search"></i>
+            </div>
+            <input type="search" id="search" placeholder="Recherche... 'grillage rigide'" required
+              onchange="ouvrirPage()" />
+            <script src="recherche.js"></script>
+          </li>
+          <div class="box-phone">
+            <i class="bx bxs-phone"></i>
+            <span><strong><a href="tel:0604533437">06 04 53 34 37</a></strong></span>
+          </div>
+          <div class="indicateur"></div>
+        </ul>
+      </div>
+    </nav>
+    <script src="script.js"></script>
+    <script>
+      const list = document.querySelectorAll(".list");
+      function active() {
+        list.forEach((item) => item.classList.remove("active"));
+        this.classList.add("active");
+      }
+      list.forEach((item) => item.addEventListener("click", active));
+    </script>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <h1>Portillons en aluminium</h1>
+
+        <div class="produit-list">
+
+          <!-- Produit 1 -->
+          <div class="produit">
+            <h2>Portillon ajouré éco</h2>
+            <a href="Pages-Produits/Portillons/Portillon1-alu.html">
+              <img src="Assets/Image/Portillons détourés/Portillon-alu1.png" alt="Portillon1-alu">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 1m / 1m2 / 1m5</p>
+            </a>
+          </div>
+
+          <!-- Produit 2 -->
+          <div class="produit">
+            <h2>Portillon ajouré</h2>
+            <a href="Pages-Produits/Portillons/Portillon2-alu.html">
+              <img src="Assets/Image/Portillons détourés/Portillon-alu2.png" alt="Portillon2-alu">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 1m / 1m2 / 1m5</p>
+            </a>
+          </div>
+
+          <!-- Produit 3 -->
+          <div class="produit">
+            <h2>Portillon semi-ajouré</h2>
+            <a href="Pages-Produits/Portillons/Portillon3-alu.html">
+              <img src="Assets/Image/Portillons détourés/Portillon-alu3.png" alt="Portillon3-alu">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 1m / 1m2 / 1m5</p>
+            </a>
+          </div>
+
+          <!-- Produit 4 -->
+          <div class="produit">
+            <h2>Portillon plein</h2>
+            <a href="Pages-Produits/Portillons/Portillon4-alu.html">
+              <img src="Assets/Image/Portillons détourés/Portillon-alu4.png" alt="Portillon4-alu">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 1m / 1m2 / 1m5</p>
+            </a>
+          </div>
+
+          <!-- Produit 5 -->
+          <div class="produit">
+            <h2>Portillon contemporain</h2>
+            <a href="Pages-Produits/Portillons/Portillon5-alu.html">
+              <img src="Assets/Image/Portillons détourés/Portillon-alu5.png" alt="Portillon5-alu">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 1m / 1m2 / 1m5</p>
+            </a>
+          </div>
+
+          <!-- Produit 6 -->
+          <div class="produit">
+            <h2>Portillon ajouré verticalement</h2>
+            <a href="Pages-Produits/Portillons/Portillon6-alu.html">
+              <img src="Assets/Image/Portillons détourés/Portillon-alu6.png" alt="Portillon6-alu">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 1m / 1m2 / 1m5</p>
+            </a>
+          </div>
+
+          <!-- Produit 7 -->
+          <div class="produit">
+            <h2>Portillon classique</h2>
+            <a href="Pages-Produits/Portillons/Portillon7-alu.html">
+              <img src="Assets/Image/Portillons détourés/Portillon-alu7.png" alt="Portillon7-alu">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 1m / 1m2 / 1m5</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h1>Portillons en acier</h1>
+        <div class="produit-list">
+
+          <!-- Produit 1 -->
+          <div class="produit">
+            <h2>Portillon barreaudé verticalement</h2>
+            <a href="Pages-Produits/Portillons/Portillon1-acier.html">
+              <img src="Assets/Image/Portillons détourés/portillion-acier1 .png" alt="Portillon1-acier">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 1m / 1m2 / 1m5</p>
+            </a>
+          </div>
+
+          <!-- Produit 2 -->
+          <div class="produit">
+            <h2>Portillon barreaudé uniformément </h2>
+            <a href="Pages-Produits/Portillons/Portillon2-acier.html">
+              <img src="Assets/Image/Portillons détourés/portillion-acier2.png" alt="Portillon2-acier">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 1m / 1m2 / 1m5</p>
+            </a>
+          </div>
+
+          <!-- Produit 3 -->
+          <div class="produit">
+            <h2>Portillon barreaudé horizontalement</h2>
+            <a href="Pages-Produits/Portillons/Portillon3-acier.html">
+              <img src="Assets/Image/Portillons détourés/portillion-acier3.png" alt="Portillon3-acier">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 1m / 1m2 / 1m5</p>
+            </a>
+          </div>
+
+          <!-- Produit 4 -->
+          <div class="produit">
+            <h2>Portillon ajouré à lames</h2>
+            <a href="Pages-Produits/Portillons/Portillon4-acier.html">
+              <img src="Assets/Image/Portillons détourés/portillion-acier4.png" alt="Portillon4-acier">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 1m / 1m2 / 1m5</p>
+            </a>
+          </div>
+
+          <!-- Produit 5 -->
+          <div class="produit">
+            <h2>Portillon tradition ajouré</h2>
+            <a href="Pages-Produits/Portillons/Portillon5-acier.html">
+              <img src="Assets/Image/Portillons détourés/portillion-acier5.png" alt="Portillon5-acier">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 1m / 1m2 / 1m5</p>
+            </a>
+          </div>
+
+          <!-- Produit 6 -->
+          <div class="produit">
+            <h2>Portillon tradition plein</h2>
+            <a href="Pages-Produits/Portillons/Portillon6-acier.html">
+              <img src="Assets/Image/Portillons détourés/portillion-acier6.png" alt="Portillon6-acier">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 1m / 1m2 / 1m5</p>
+            </a>
+          </div>
+
+          <!-- Produit 7 -->
+          <div class="produit">
+            <h2>Portillon classique</h2>
+            <a href="Pages-Produits/Portillons/Portillon7-acier.html">
+              <img src="Assets/Image/Portillons détourés/portillion-acier7.png" alt="Portillon7-acier">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 1m / 1m2 / 1m5</p>
+            </a>
+          </div>
+
+          <!-- Produit 8 -->
+          <div class="produit">
+            <h2>Portillon design</h2>
+            <a href="Pages-Produits/Portillons/Portillon8-acier.html">
+              <img src="Assets/Image/Portillons détourés/portillion-acier8.png" alt="Portillon8-acier">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 1m / 1m2 / 1m5</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p><a href="tel:0604533437">Téléphone : +33 6 04 53 34 37 </a><br><br> ou <br> <br>
+          <a href="tel:0651542222">+33 6 51 54 22 22</a>
+        </p>
+        <p>Email : robex.industry@gmail.com</p>
+        <p>Adresse : 843 Rte de Mirecourt, 88220 Xertigny</p>
+      </div>
+      <div class="footer-section">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="produitETservice.html">Produits/Services</a></li>
+          <li><a href="À_propos_de_nous.html">À propos de nous</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Suivez-nous</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100064048514149"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Robex. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <script src="scriptProduits.js"></script>
+</body>
+
+</html>

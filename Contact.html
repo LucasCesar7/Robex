@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robex</title>
+    <link rel="stylesheet" href="Contact.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="shortcut icon" href="/Assets/Image/LOGO ROBEX.png" type="image-logo" />
+</head>
+
+<body>
+    <header>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <div class="navigation">
+                <ul class="nav-links" id="nav-links">
+                    <li class="logo">
+                        <a href="index.html"><img src="Assets/Image/LOGO ROBEX.png" alt="logo" width="150%" /></a>
+                    </li>
+                    <li class="list">
+                        <a href="index.html">
+                            <span class="icon"><i class="bx bx-home"></i></span>
+                            <span class="text">Accueil</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="produitETservice.html">
+                            <span class="icon"><i class="bx bxs-shopping-bag"></i></span>
+                            <span class="text">Produits/Services</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="À_propos_de_nous.html">
+                            <span class="icon"><i class="bx bx-info-circle bx-flip-horizontal"></i></span>
+                            <span class="text">À propos de nous</span>
+                        </a>
+                    </li>
+                    <li class="list active">
+                        <a href="Contact.html">
+                            <span class="icon"><i class="bx bx-user-pin bx-flip-horizontal"></i></span>
+                            <span class="text">Contact</span>
+                        </a>
+                    </li>
+                    <li class="rechercher">
+                        <div class="loupe">
+                            <i class="bx bx-search"></i>
+                        </div>
+                        <input type="search" id="search" placeholder="Recherche... 'grillage rigide'" required onchange="ouvrirPage()" />
+                        <script src="recherche.js"></script>                    </li>
+                    <div class="box-phone">
+                        <i class="bx bxs-phone"></i>
+                        <span><strong><a href="tel:0604533437">06 04 53 34 37</a></strong></span>
+                    </div>
+                    <div class="indicateur"></div>
+                </ul>
+            </div>
+        </nav>
+        <script src="script.js"></script>
+        <script>
+            const list = document.querySelectorAll(".list");
+            function active() {
+                list.forEach((item) => item.classList.remove("active"));
+                this.classList.add("active");
+            }
+            list.forEach((item) => item.addEventListener("click", active));
+        </script>
+        </nav>
+    </header>
+    <div class="contenu">
+        <div class="container">
+
+            <h2>Contactez-nous</h2>
+            <form onsubmit="sendEmail(event)" method="post" id="contact-form">
+                <div class="groupe">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                </div>
+
+                <div class="groupe">
+                    <div class="setNom">
+                        <label for="nom">Nom :</label>
+                    </div>
+                    <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                </div>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="example@hotmail.fr" required>
+
+                <label for="tel">Téléphone :</label>
+                <input type="tel" id="tel" name="tel" placeholder="01 23 45 67 89" required>
+
+                <label for="demande">Type de demande :</label>
+                <select id="demande" name="demande">
+                    <option value="portail">Portail</option>
+                    <option value="portillon">Portillon</option>
+                    <option value="kit-grillage">Kit grillage</option>
+                    <option value="grillage">Grillage</option>
+                    <option value="poteaux">Poteaux</option>
+                    <option value="fixation-platines">Fixation / platines</option>
+                    <option value="kit-lames">Kit lames</option>
+                    <option value="devis">Demande de devis</option>
+                    <option value="autre">Autre</option>
+                </select>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+
+            <script>
+                function sendEmail(event) {
+                    event.preventDefault(); // Empêche le rechargement de la page
+
+                    const prenom = encodeURIComponent(document.getElementById('prenom').value);
+                    const nom = encodeURIComponent(document.getElementById('nom').value);
+                    const email = encodeURIComponent(document.getElementById('email').value);
+                    const telephone = encodeURIComponent(document.getElementById('tel').value);
+                    const typeDemande = encodeURIComponent(document.getElementById('demande').value);
+                    const message = encodeURIComponent(document.getElementById('message').value);
+
+                    const subject = `Demande de contact - ${typeDemande}`;
+                    const body =
+                        `Bonjour,%0A%0A` +
+                        `Vous avez reçu une nouvelle demande de contact :%0A%0A` +
+                        `👤 Prénom : ${prenom}%0A` +
+                        `👤 Nom : ${nom}%0A` +
+                        `✉️ Email : ${email}%0A` +
+                        `📞 Téléphone : ${telephone}%0A` +
+                        `📂 Type de demande : ${typeDemande}%0A%0A` +
+                        `📝 Message :%0A${message}%0A%0A` +
+                        `Cordialement,%0A${prenom} %20${nom}`;
+
+                    // Envoi de l'email avec le lien mailto
+                    window.location.href = `mailto:robex.industry@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+                }
+            </script>
+            <div class="contact-info">
+                <br>
+                <br>
+                <p><strong>Email : robex.industry@gmail.com</strong></p>
+            </div>
+        </div>
+
+        <div class="renseignement">
+            <div class="element">
+                <div class="element1">
+                    <h2>APPELEZ-NOUS</h2>
+                    <p><a href="tel:0604533437">+33 6 04 53 34 37</a></p>
+                    <p><a href="tel:0651542222">+33 6 51 54 22 22</a></p>
+                </div>
+                <div class="element2">
+                    <h2>EMPLACEMENT</h2>
+                    <p>843 Rte de Mirecourt, 88220 Xertigny</p>
+                </div>
+                <div class="element3">
+                    <h2>NOS RÉSEAUX SOCIAUX</h2>
+                    <a href="https://www.facebook.com/profile.php?id=100064048514149"><i
+                            class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carte">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.396346220187!2d6.365573175994889!3d48.0549541712346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479307d23a9cd335%3A0x355ddc21c5797d31!2s843%20Rte%20de%20Mirecourt%2C%2088220%20Xertigny!5e1!3m2!1sfr!2sfr!4v1741720700770!5m2!1sfr!2sfr"
+                width="500" height="820" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><a href="tel:0604533437">Téléphone : +33 6 04 53 34 37 </a><br><br> ou <br> <br>
+                    <a href="tel:0651542222">+33 6 51 54 22 22</a>
+                </p>
+                <p>Email : robex.industry@gmail.com</p>
+                <p>Adresse : 843 Rte de Mirecourt, 88220 Xertigny</p>
+            </div>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="produitETservice.html">Produits/Services</a></li>
+                    <li><a href="À_propos_de_nous.html">À propos de nous</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100064048514149"><i
+                            class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Robex. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

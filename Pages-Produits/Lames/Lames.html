@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robex</title>
+    <link rel="stylesheet" href="Lames.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="shortcut icon" href="/Assets/Image/LOGO ROBEX.png" type="image-logo" />
+</head>
+
+<body>
+    <header>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <div class="navigation">
+                <ul class="nav-links" id="nav-links">
+                    <li class="logo">
+                        <a href="../../index.html"><img src="../../Assets/Image/LOGO ROBEX.png" alt="logo"
+                                width="150%" /></a>
+                    </li>
+                    <li class="list">
+                        <a href="../../index.html">
+                            <span class="icon"><i class="bx bx-home"></i></span>
+                            <span class="text">Accueil</span>
+                        </a>
+                    </li>
+                    <li class="list active">
+                        <a href="../../produitETservice.html">
+                            <span class="icon"><i class="bx bxs-shopping-bag"></i></span>
+                            <span class="text">Produits/Services</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="../../À_propos_de_nous.html">
+                            <span class="icon"><i class="bx bx-info-circle bx-flip-horizontal"></i></span>
+                            <span class="text">À propos de nous</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="../../Contact.html">
+                            <span class="icon"><i class="bx bx-user-pin bx-flip-horizontal"></i></span>
+                            <span class="text">Contact</span>
+                        </a>
+                    </li>
+                    <li class="rechercher">
+                        <div class="loupe">
+                            <i class="bx bx-search"></i>
+                        </div>
+                        <input type="search" id="search" placeholder="Recherche... 'grillage rigide'" required onchange="ouvrirPage()" />
+                        <script src="../../recherche.js"></script>
+                    </li>
+                    <div class="box-phone">
+                        <i class="bx bxs-phone"></i>
+                        <span><strong><a href="tel:0604533437">06 04 53 34 37</a></strong></span>
+                    </div>
+                    <div class="indicateur"></div>
+                </ul>
+            </div>
+        </nav>
+        <script src="../../script.js"></script>
+        <script>
+            const list = document.querySelectorAll(".list");
+            function active() {
+                list.forEach((item) => item.classList.remove("active"));
+                this.classList.add("active");
+            }
+            list.forEach((item) => item.addEventListener("click", active));
+        </script>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+
+                <div class="details">
+                    <h1>Kit lames en acier au ML</h1>
+                    <p>🔒 Une solution complète pour clôturer facilement et solidement !<br><br>
+
+                        Choisissez notre kit de lames en acier, une solution à la fois élégante et robuste pour
+                        sécuriser et sublimer vos espaces extérieurs. Conçues pour s’intégrer à diverses structures, ces
+                        lames sont proposées en kit vendues au mètre linéaire, vous garantissant une adaptabilité
+                        parfaite à votre projet.<br><br>
+
+                        Caractéristiques : <br><br>
+
+                        ✅ Matériau premium : Acier haute résistance, traité contre la corrosion et les
+                        intempéries.<br><br>
+                        ✅ Esthétique moderne : Finition élégante, idéale pour une intégration harmonieuse avec votre
+                        jardin ou votre propriété.<br><br>
+                        ✅ Facilité d'installation : Système modulaire permettant un montage rapide et sans
+                        difficulté.<br><br>
+                        ✅ Personnalisable : Disponible en différentes hauteurs, largeurs et coloris pour s’adapter à
+                        votre projet.<br><br>
+                        Utilisations idéales :<br><br>
+
+                        🔹 Clôtures résidentielles<br><br>
+                        🔹 Séparation d'espaces extérieurs<br><br>
+                        🔹 Encadrement pour portails et portillons<br><br>
+
+                        📦 <strong>Kit complet incluant :</strong><br><br>
+                        ✅ Panneaux de lames <br><br>
+                        ✅ Poteaux à sceller + capuchons de finition<br><br>
+                        ✅ Fixations et visserie<br><br>
+
+                        Profitez d’une solution à la fois esthétique, résistante et nécessitant peu d’entretien pour
+                        sécuriser vos extérieurs avec style,vendue au <strong>mètre linéaire
+                            !</strong><br><br>
+
+                        🚚 Livraison Rapide | 🛡️ Garantie 10 Ans | ♻️ 100% Recyclable
+                    </p>
+                </div>
+
+                <div class="images">
+                    <img id="mainImage" class="main-image" src="../../Assets/Image/Lames/lame1.jpg" alt="Produit">
+                    <div class="thumbnail-container">
+                        <img class="vignette" src="../../Assets/Image/Lames/lame1.jpg"
+                            onclick="changeImage('../../Assets/Image/Lames/lame1.jpg')">
+                        <img class="vignette" src="../../Assets/Image/Lames/lames2.jpg"
+                            onclick="changeImage('../../Assets/Image/Lames/lames2.jpg')">
+                        <img class="vignette" src="../../Assets/Image/Lames/lames3.jpg"
+                            onclick="changeImage('../../Assets/Image/Lames/lames3.jpg')">
+                        <img class="vignette" src="../../Assets/Image/Lames/lames4.jpg"
+                            onclick="changeImage('../../Assets/Image/Lames/lames4.jpg')">
+                    </div>
+                </div>
+                <div class="details2">
+                    <div class="couleur">
+                        <p>Couleur : gris anthracite</p>
+                        <div class="carre"></div>
+                    </div>
+                    <div class="dimension">
+                        <label for="height">Hauteur (m) :</label>
+                        <select id="height" onchange="calculatePrice()">
+                            <option value="0.70">0.70m</option>
+                            <option value="Sur-mesure">Sur-mesure</option>
+                        </select>
+                        <br>
+                        <label for="width">Largeur (m) :</label>
+                        <select id="width" onchange="calculatePrice()">
+                            <option value="0.11">0.11m</option>
+                        </select>
+
+                        <label for="length">Longueur (m) :</label>
+                        <input id="length" type="number" minlength="1" onchange="calculatePrice()">
+
+                    </div>
+                    <p class="prix" id="prix">Prix totale : 50.00 € pour 1 m </p>
+                </div>
+            </div>
+
+            <script>
+
+                function changeImage(src) {
+                    document.getElementById('mainImage').src = src;
+                }
+                
+                function calculatePrice() {
+                    let heightInput = document.getElementById('height').value;
+                    let width = parseFloat(document.getElementById('width').value);
+                    let length = parseFloat(document.getElementById('length').value); // Récupération de la longueur en mètres
+
+                    let priceMap = {
+                        "0.70-0.11": 50,
+                    };
+
+                    let key = `${parseFloat(heightInput).toFixed(2)}-${width.toFixed(2)}`;
+                    let unitPrice = priceMap[key] || null;
+
+                    if (heightInput === "Sur-mesure") {
+                        document.getElementById('prix').innerText = "Contactez-nous pour plus de renseignements !";
+                    } else if (unitPrice !== null && !isNaN(length) && length > 0) {
+                        let finalPrice = unitPrice * length;
+                        document.getElementById('prix').innerText = `Prix total : ${finalPrice.toFixed(2)} € pour ${length} m`;
+                    } else {
+                        document.getElementById('prix').innerText = "Prix non disponible ou longueur invalide";
+                    }
+                }
+
+            </script>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><a href="tel:0604533437">Téléphone : +33 6 04 53 34 37 </a><br><br> ou <br> <br>
+                    <a href="tel:0651542222">+33 6 51 54 22 22</a>
+                </p>
+                <p>Email : robex.industry@gmail.com</p>
+                <p>Adresse : 843 Rte de Mirecourt, 88220 Xertigny</p>
+            </div>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="../../index.html">Accueil</a></li>
+                    <li><a href="../../produitETservice.html">Produits/Services</a></li>
+                    <li><a href="../../À_propos_de_nous.html">À propos de nous</a></li>
+                    <li><a href="../../Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100064048514149"><i
+                            class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Robex. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

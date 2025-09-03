@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robex</title>
+  <link rel="stylesheet" href="produitETservice.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="shortcut icon" href="/Assets/Image/LOGO ROBEX.png" type="image-logo" />
+</head>
+
+<body>
+  <header>
+    <div class="hamburger-menu" id="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <div class="navigation">
+        <ul class="nav-links" id="nav-links">
+          <li class="logo">
+            <a href="index.html"><img src="Assets/Image/LOGO ROBEX.png" alt="logo" width="150%" /></a>
+          </li>
+          <li class="list">
+            <a href="index.html">
+              <span class="icon"><i class="bx bx-home"></i></span>
+              <span class="text">Accueil</span>
+            </a>
+          </li>
+          <li class="list active">
+            <a href="produitETservice.html">
+              <span class="icon"><i class="bx bxs-shopping-bag"></i></span>
+              <span class="text">Produits/Services</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="À_propos_de_nous.html">
+              <span class="icon"><i class="bx bx-info-circle bx-flip-horizontal"></i></span>
+              <span class="text">À propos de nous</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="Contact.html">
+              <span class="icon"><i class="bx bx-user-pin bx-flip-horizontal"></i></span>
+              <span class="text">Contact</span>
+            </a>
+          </li>
+          <li class="rechercher">
+            <div class="loupe">
+              <i class="bx bx-search"></i>
+            </div>
+            <input type="search" id="search" placeholder="Recherche... 'grillage rigide'" required
+              onchange="ouvrirPage()" />
+            <script src="recherche.js"></script>
+          </li>
+          <div class="box-phone">
+            <i class="bx bxs-phone"></i>
+            <span><strong><a href="tel:0604533437">06 04 53 34 37</a></strong></span>
+          </div>
+          <div class="indicateur"></div>
+        </ul>
+      </div>
+    </nav>
+    <script src="script.js"></script>
+    <script>
+      const list = document.querySelectorAll(".list");
+      function active() {
+        list.forEach((item) => item.classList.remove("active"));
+        this.classList.add("active");
+      }
+      list.forEach((item) => item.addEventListener("click", active));
+    </script>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section Catégories de Produits -->
+    <section id="categories" class="section">
+      <div class="container">
+        <div class="entete">
+          <h1>Nos différents types de Produits</h1>
+          <p>Experts en matériaux de construction, nous proposons des solutions innovantes et performantes. Notre gamme
+            complète répond aux exigences techniques de tous vos projets, avec un engagement qualité et une expertise
+            sur-mesure. Chaque produit est le fruit d'une recherche pointue, conçu pour offrir fiabilité, économie et
+            performance.</p>
+        </div>
+
+        <!-- Filtres -->
+        <div class="filtres">
+          <label for="filtre-categorie">Filtrer par catégorie :</label>
+          <select id="filtre-categorie">
+            <option value="all">Toutes les types de produits</option>
+            <option value="categorie1">Portails</option>
+            <option value="categorie2">Portillons</option>
+            <option value="categorie3">Kit grillage rigide</option>
+            <option value="categorie4">Grillage rigide</option>
+            <option value="categorie5">Poteaux</option>
+            <option value="categorie6">Pilier en béton</option>
+            <option value="categorie7">Fixations / platines</option>
+            <option value="categorie8">Kit lames</option>
+          </select>
+        </div>
+
+        <!-- Grille des Catégories -->
+        <div class="categorie-grid">
+          <!-- Catégorie 1 -->
+          <div class="categorie" data-category="categorie1">
+            <a href="Portails.html">
+              <img src="Assets/Image/Portail.jpg" alt="Portails">
+              <div class="categorie-info">
+                <h2>Portails</h2>
+                <p>Portails robustes et durables pour industries.</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Catégorie 2 -->
+          <div class="categorie" data-category="categorie2">
+            <a href="Portillons.html">
+              <img src="Assets/Image/Portillon.png" alt="Portillons">
+              <div class="categorie-info">
+                <h2>Portillons</h2>
+                <p>Portillons solides et pratiques pour industries.</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Catégorie 3 -->
+          <div class="categorie" data-category="categorie3">
+            <a href="Kit-grillage.html">
+              <img src="Assets/Image/Kit grillage/grillage-ml.jpg" alt="Grillage rigide">
+              <div class="categorie-info">
+                <h2>Kit grillage rigide</h2>
+                <p>Kit au mètre linéaire de grillage rigide à sceller</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Catégorie 4 -->
+          <div class="categorie" data-category="categorie4">
+            <a href="grillage.html">
+              <img src="Assets/Image/grillage.jpg" alt="Grillage rigide">
+              <div class="categorie-info">
+                <h2>Grillage rigide</h2>
+                <p>Grillage rigide : sécurité et longévité.</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Catégorie 5 -->
+          <div class="categorie" data-category="categorie5">
+            <a href="Poteau.html">
+              <img src="Assets/Image/Poteau.jpg" alt="Poteaux">
+              <div class="categorie-info">
+                <h2>Poteaux</h2>
+                <p>Poteaux à encoche et poteaux avec fixations </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Catégorie 6 -->
+          <div class="categorie" data-category="categorie6">
+            <a href="Pilier.html">
+              <img src="Assets/Image/Pilier-Beton.webp" alt="Piliers béton">
+              <div class="categorie-info">
+                <h2>Piliers béton</h2>
+                <p>Pilier béton : rapide à installer, offrant stabilité et durabilité pour tous types de constructions.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Catégorie 7 -->
+          <div class="categorie" data-category="categorie7">
+            <a href="Fixation-platine.html">
+              <img src="Assets/Image/Platines.jpg" alt="fixations et platines">
+              <div class="categorie-info">
+                <h2>Fixations / platines</h2>
+                <p>Solution technique polyvalente offrant stabilité, rapidité et précision sur divers supports.</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Catégorie 8 -->
+          <div class="categorie" data-category="categorie8">
+            <a href="Lames.html">
+              <img src="Assets/Image/Lames/lames3.jpg" alt="lames">
+              <div class="categorie-info">
+                <h2>Kit lames acier</h2>
+                <p>Lames de clôture : esthétiques et modulables, elles offrent une solution durable et sécurisée,
+                  s’adaptant à divers types d’installations.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class="section-3">
+      <div class="container-2">
+        <h1>Nos Services</h1>
+        <div class="service-list">
+          <div class="service">
+            <i class='bx bx-ruler'></i>
+            <h2>Personnalisation sur mesure</h2>
+            <p>Une multitude de dimensions pour s'adapter à tous vos projets !
+              Grillages, portails, clôtures : notre large gamme propose des dimensions standards qui répondent à 99% des
+              configurations. Du petit jardin à la grande propriété, nous avons LA solution dimensionnelle qui
+              correspond exactement à votre besoin. Pas besoin de compromis, trouvez le format parfait parmi nos
+              nombreuses références.
+            </p>
+          </div>
+          <div class="service">
+            <i class='bx bx-conversation'></i>
+            <h2>Conseil technique et accompagnement</h2>
+            <p>Vous n'êtes pas seul dans votre projet !
+              Nos experts techniques sont à votre écoute pour vous guider du premier croquis jusqu'à la pose finale.
+              Matériaux, normes, techniques d'installation : nous répondons à toutes vos questions. Un accompagnement
+              professionnel qui fait la différence.
+            </p>
+          </div>
+          <div class="service">
+            <i class='bx bx-dollar-circle'></i>
+            <h2>Flexibilité de livraison et de paiement</h2>
+            <p>Commandez simplement, nous faisons le reste !
+              Livraison rapide dans tout l'est de la France, paiement sécurisé, stock permanent garantissant
+              disponibilité immédiate. La garantie de nos produits est de 10 ans ! La facilité et la rapidité au service
+              de vos projets de clôture.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p><a href="tel:0604533437">Téléphone : +33 6 04 53 34 37 </a><br><br> ou <br> <br>
+          <a href="tel:0651542222">+33 6 51 54 22 22</a>
+        </p>
+        <p>Email : robex.industry@gmail.com</p>
+        <p>Adresse : 843 Rte de Mirecourt, 88220 Xertigny</p>
+      </div>
+      <div class="footer-section">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="produitETservice.html">Produits/Services</a></li>
+          <li><a href="À_propos_de_nous.html">À propos de nous</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Suivez-nous</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100064048514149"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Robex. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <script src="scriptProduits.js"></script>
+</body>
+
+</html>

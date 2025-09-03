@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robex</title>
+  <link rel="stylesheet" href="Portails.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="shortcut icon" href="/Assets/Image/LOGO ROBEX.png" type="image-logo" />
+</head>
+
+<body>
+  <header>
+    <div class="hamburger-menu" id="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <div class="navigation">
+        <ul class="nav-links" id="nav-links">
+          <li class="logo">
+            <a href="index.html"><img src="Assets/Image/LOGO ROBEX.png" alt="logo" width="150%" /></a>
+          </li>
+          <li class="list">
+            <a href="index.html">
+              <span class="icon"><i class="bx bx-home"></i></span>
+              <span class="text">Accueil</span>
+            </a>
+          </li>
+          <li class="list active">
+            <a href="produitETservice.html">
+              <span class="icon"><i class="bx bxs-shopping-bag"></i></span>
+              <span class="text">Produits/Services</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="À_propos_de_nous.html">
+              <span class="icon"><i class="bx bx-info-circle bx-flip-horizontal"></i></span>
+              <span class="text">À propos de nous</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="Contact.html">
+              <span class="icon"><i class="bx bx-user-pin bx-flip-horizontal"></i></span>
+              <span class="text">Contact</span>
+            </a>
+          </li>
+          <li class="rechercher">
+            <div class="loupe">
+              <i class="bx bx-search"></i>
+            </div>
+            <input type="search" id="search" placeholder="Recherche... 'grillage rigide'" required
+              onchange="ouvrirPage()" />
+            <script src="recherche.js"></script>
+          </li>
+          <div class="box-phone">
+            <i class="bx bxs-phone"></i>
+            <span><strong><a href="tel:0604533437">06 04 53 34 37</a></strong></span>
+          </div>
+          <div class="indicateur"></div>
+        </ul>
+      </div>
+    </nav>
+    <script src="script.js"></script>
+    <script>
+      const list = document.querySelectorAll(".list");
+      function active() {
+        list.forEach((item) => item.classList.remove("active"));
+        this.classList.add("active");
+      }
+      list.forEach((item) => item.addEventListener("click", active));
+    </script>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <h1>Portails coulissants droits en aluminium</h1>
+        <p class="description-entete">Notre pack est conçu pour vous offrir une solution clé en main, alliant praticité,
+          robustesse et design. Il comprend tous les éléments essentiels pour une installation simple et sécurisée : un
+          portail élégant et fonctionnel, accompagné des équipements nécessaires pour garantir un mouvement fluide, une
+          fixation solide et une stabilité parfaite. Grâce à ce pack, vous bénéficiez d’un mécanisme performant et d’une
+          installation durable, idéale pour répondre à vos besoins avec style et efficacité.</p>
+
+        <div class="produit-list">
+
+          <!-- Produit 1 -->
+          <div class="produit">
+            <a href="Pages-Produits/Portails/Portail1-alu.html">
+              <h2>Portail ajouré éco</h2>
+              <img src="Assets/Image/Portails détourés/Portail1-alu.png" alt="portail-alu1">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 3m5 / 4m / 4m5 / 5m / 5m5</p>
+            </a>
+          </div>
+
+          <!-- Produit 2 -->
+          <div class="produit">
+            <h2>Portail ajouré</h2>
+            <a href="Pages-Produits/Portails/Portail2-alu.html">
+              <img src="Assets/Image/Portails détourés/Portail2-alu.png" alt="portail-alu2">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 3m5 / 4m / 4m5 / 5m / 5m5</p>
+            </a>
+          </div>
+
+          <!-- Produit 3 -->
+          <div class="produit">
+            <h2>Portail semi-ajouré</h2>
+            <a href="Pages-Produits/Portails/Portail3-alu.html"> <img
+                src="Assets/Image/Portails détourés/Portail3-alu.png" alt="portail-alu3">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 3m5 / 4m / 4m5 / 5m / 5m5</p>
+            </a>
+          </div>
+
+          <!-- Produit 4 -->
+          <div class="produit">
+            <h2>Portail peu ajouré</h2>
+            <a href="Pages-Produits/Portails/Portail4-alu.html">
+              <img src="Assets/Image/Portails détourés/Portail4-alu.png" alt="portail-alu4">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 3m5 / 4m / 4m5 / 5m / 5m5</p>
+            </a>
+          </div>
+
+          <!-- Produit 5 -->
+          <div class="produit">
+            <h2>Portail plein</h2>
+            <a href="Pages-Produits/Portails/Portail5-alu.html">
+              <img src="Assets/Image/Portails détourés/Portail5-alu.png" alt="portail-alu5">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 3m5 / 4m / 4m5 / 5m / 5m5</p>
+            </a>
+          </div>
+
+          <!-- Produit 6 -->
+          <div class="produit">
+            <h2>Portail contemporain</h2>
+            <a href="Pages-Produits/Portails/Portail6-alu.html">
+              <img src="Assets/Image/Portails détourés/Portail6-alu.png" alt="portail-alu6">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 3m5 / 4m / 4m5 / 5m / 5m5</p>
+            </a>
+          </div>
+
+          <!-- Produit 7 -->
+          <div class="produit">
+            <h2>Portail ajouré verticalement</h2>
+            <a href="Pages-Produits/Portails/Portail7-alu.html">
+              <img src="Assets/Image/Portails détourés/Portail7-alu.png" alt="portail-alu7">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 3m5 / 4m / 4m5 / 5m / 5m5</p>
+            </a>
+          </div>
+
+          <!-- Produit 8 -->
+          <div class="produit">
+            <h2>Portail classique</h2>
+            <a href="Pages-Produits/Portails/Portail8-alu.html">
+              <img src="Assets/Image/Portails détourés/Portail8-alu.png" alt="portail-alu8">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur: 3m5 / 4m / 4m5 / 5m / 5m5</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h1>Portails autoportants droits en acier</h1>
+
+        <div class="produit-list">
+
+          <!-- Produit 1 -->
+          <div class="produit">
+            <h2>Portail barreaudé verticalement</h2>
+            <a href="Pages-Produits/Portails/Portail1-acier.html">
+              <img src="Assets/Image/Portails détourés/Portail-acier1.png" alt="portail-acier1">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur : 3m5 /4m /4m5 /5m /5m5 /6m /6m5 /7m /7m5</p>
+            </a>
+
+          </div>
+
+          <!-- Produit 2 -->
+          <div class="produit">
+            <h2>Portail barreaudé uniformément </h2>
+            <a href="Pages-Produits/Portails/Portail2-acier.html">
+              <img src="Assets/Image/Portails détourés/Portail-acier2.png" alt="portail-acier2">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur : 3m5 /4m /4m5 /5m /5m5 </p>
+            </a>
+          </div>
+
+          <!-- Produit 3 -->
+          <div class="produit">
+            <h2>Portail barreaudé horizontalement</h2>
+            <a href="Pages-Produits/Portails/Portail3-acier.html">
+              <img src="Assets/Image/Portails détourés/Portail-acier3.png" alt="portail-acier3">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur : 3m5 /4m /4m5 /5m /5m5 /6m /6m5 /7m /7m5 </p>
+            </a>
+
+          </div>
+
+          <!-- Produit 4 -->
+          <div class="produit">
+            <h2>Portail peu ajouré</h2>
+            <a href="Pages-Produits/Portails/Portail4-acier.html">
+              <img src="Assets/Image/Portails détourés/Portail-acier4.png" alt="portail-acier4">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur : 3m5 /4m /4m5 /5m /5m5 /6m /6m5 /7m /7m5 </p>
+            </a>
+          </div>
+
+          <!-- Produit 5 -->
+          <div class="produit">
+            <h2>Portail ajouré à lames</h2>
+            <a href="Pages-Produits/Portails/Portail5-acier.html">
+              <img src="Assets/Image/Portails détourés/Portail-acier5.png" alt="portail-acier5">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur : 3m5 /4m /4m5 /5m /5m5 /6m /6m5 /7m /7m5 </p>
+            </a>
+
+          </div>
+
+          <!-- Produit 6 -->
+          <div class="produit">
+            <h2>Portail tradition ajouré</h2>
+            <a href="Pages-Produits/Portails/Portail6-acier.html">
+              <img src="Assets/Image/Portails détourés/Portail-acier6.png" alt="portail-acier6">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur : 3m5 /4m /4m5 /5m /5m5 /6m /6m5 /7m /7m5 </p>
+            </a>
+          </div>
+
+          <!-- Produit 7 -->
+          <div class="produit">
+            <h2>Portail tradition plein</h2>
+            <a href="Pages-Produits/Portails/Portail7-acier.html">
+              <img src="Assets/Image/Portails détourés/Portail-acier7.png" alt="portail-acier7">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur : 3m5 /4m /4m5 /5m /5m5 /6m /6m5 /7m /7m5 </p>
+            </a>
+          </div>
+
+          <!-- Produit 8 -->
+          <div class="produit">
+            <h2>Portail classique plein</h2>
+            <a href="Pages-Produits/Portails/Portail8-acier.html">
+              <img src="Assets/Image/Portails détourés/Portail-acier8.png" alt="portail-acier8">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur : 3m5 /4m /4m5 /5m /5m5 /6m /6m5 /7m /7m5 </p>
+            </a>
+          </div>
+
+          <!-- Produit 9 -->
+          <div class="produit">
+            <h2>Portail design</h2>
+            <a href="Pages-Produits/Portails/Portail9-acier.html">
+              <img src="Assets/Image/Portails détourés/Portail-acier9.png" alt="portail-acier9">
+              <p>Hauteur: 1m5 / 1m8 / 2m</p>
+              <p>Longueur : 3m5 /4m /4m5 /5m /5m5 /6m /6m5 /7m /7m5 </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p><a href="tel:0604533437">Téléphone : +33 6 04 53 34 37 </a><br><br> ou <br> <br>
+          <a href="tel:0651542222">+33 6 51 54 22 22</a>
+        </p>
+        <p>Email : robex.industry@gmail.com</p>
+        <p>Adresse : 843 Rte de Mirecourt, 88220 Xertigny</p>
+      </div>
+      <div class="footer-section">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="produitETservice.html">Produits/Services</a></li>
+          <li><a href="À_propos_de_nous.html">À propos de nous</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Suivez-nous</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100064048514149"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Robex. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <script src="scriptProduits.js"></script>
+</body>
+
+</html>

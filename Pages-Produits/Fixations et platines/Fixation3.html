@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robex</title>
+    <link rel="stylesheet" href="Fixations.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="shortcut icon" href="/Assets/Image/LOGO ROBEX.png" type="image-logo" />
+</head>
+
+<body>
+    <header>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <div class="navigation">
+                <ul class="nav-links" id="nav-links">
+                    <li class="logo">
+                        <a href="../../index.html"><img src="../../Assets/Image/LOGO ROBEX.png" alt="logo"
+                                width="150%" /></a>
+                    </li>
+                    <li class="list">
+                        <a href="../../index.html">
+                            <span class="icon"><i class="bx bx-home"></i></span>
+                            <span class="text">Accueil</span>
+                        </a>
+                    </li>
+                    <li class="list active">
+                        <a href="../../produitETservice.html">
+                            <span class="icon"><i class="bx bxs-shopping-bag"></i></span>
+                            <span class="text">Produits/Services</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="../../À_propos_de_nous.html">
+                            <span class="icon"><i class="bx bx-info-circle bx-flip-horizontal"></i></span>
+                            <span class="text">À propos de nous</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="../../Contact.html">
+                            <span class="icon"><i class="bx bx-user-pin bx-flip-horizontal"></i></span>
+                            <span class="text">Contact</span>
+                        </a>
+                    </li>
+                    <li class="rechercher">
+                        <div class="loupe">
+                            <i class="bx bx-search"></i>
+                        </div>
+                        <input type="search" id="search" placeholder="Recherche... 'grillage rigide'" required onchange="ouvrirPage()" />
+                        <script src="../../recherche.js"></script>
+                    </li>
+                    <div class="box-phone">
+                        <i class="bx bxs-phone"></i>
+                        <span><strong><a href="tel:0604533437">06 04 53 34 37</a></strong></span>
+                    </div>
+                    <div class="indicateur"></div>
+                </ul>
+            </div>
+        </nav>
+        <script src="../../script.js"></script>
+        <script>
+            const list = document.querySelectorAll(".list");
+            function active() {
+                list.forEach((item) => item.classList.remove("active"));
+                this.classList.add("active");
+            }
+            list.forEach((item) => item.addEventListener("click", active));
+        </script>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+
+                <div class="details">
+                    <h1>Obejma universelle pour panneau de clôture</h1>
+                    <p>🔒 Sécurisez et stabilisez votre clôture !<br><br>
+
+                        Découvrez notre fixation pour panneau de grillage, une solution fiable et durable pour
+                        l’installation de vos clôtures. <br><br> Conçue pour s’adapter à différents types de panneaux, elle
+                        assure un maintien optimal tout en facilitant la pose. <br><br> Fabriquée avec des matériaux
+                        résistants
+                        aux intempéries et à la corrosion, cette fixation garantit une excellente durabilité. <br><br>
+                        Disponible
+                        en plusieurs modèles, elle vous permet d’assembler vos grillages avec efficacité et sécurité,
+                        que ce soit pour un usage résidentiel, professionnel ou industriel.<br><br>
+
+                        💡 Une solution fiable et esthétique pour structurer vos extérieurs avec élégance ! 💡 <br><br>
+
+                        🚚 Livraison Rapide | 🛡️ Garantie 10 Ans | ♻️ 100% Recyclable
+                    </p>
+                </div>
+
+                <div class="images">
+                    <img id="mainImage" class="main-image" src="../../Assets/Image/Fixations et platines détourés/Fixation3.png"
+                        alt="Produit">
+                    <div class="thumbnail-container">
+                        <img class="vignette" src="../../Assets/Image/Fixations et platines détourés/Fixation3.png"
+                            onclick="changeImage('../../Assets/Image/Fixations et platines détourés/Fixation3.png')">
+                    </div>
+                </div>
+                <div class="details2">
+                    <div class="couleur">
+                        <p>Couleur : gris anthracite</p>
+                        <div class="carre"></div>
+                    </div>
+                    <div class="dimension">
+                        <label for="nombre">Nombre :</label>
+                        <input id="nombre" type="number" minlength="1" onchange="calculatePrice()">
+                    </div>
+                    <p class="prix" id="prix">Prix totale : 2 € pour 1 fixation</p>
+                </div>
+            </div>
+
+            <script>
+                function changeImage(src) {
+                    document.getElementById('mainImage').src = src;
+                }
+
+                function calculatePrice() {
+                    let nombre = parseFloat(document.getElementById('nombre').value);
+
+                    let unitPrice = 2;
+
+                    if (unitPrice !== null && !isNaN(nombre) && nombre > 0) {
+                        let finalPrice = unitPrice * nombre;
+                        document.getElementById('prix').innerText = `Prix total : ${finalPrice.toFixed(2)} € pour ${nombre} fixation(s)`;
+                    } else {
+                        document.getElementById('prix').innerText = "Prix non disponible ou nombre invalide";
+                    }
+                }
+            </script>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><a href="tel:0604533437">Téléphone : +33 6 04 53 34 37 </a><br><br> ou <br> <br>
+                    <a href="tel:0651542222">+33 6 51 54 22 22</a>
+                </p>
+                <p>Email : robex.industry@gmail.com</p>
+                <p>Adresse : 843 Rte de Mirecourt, 88220 Xertigny</p>
+            </div>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="../../index.html">Accueil</a></li>
+                    <li><a href="../../produitETservice.html">Produits/Services</a></li>
+                    <li><a href="../../À_propos_de_nous.html">À propos de nous</a></li>
+                    <li><a href="../../Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100064048514149"><i
+                            class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Robex. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

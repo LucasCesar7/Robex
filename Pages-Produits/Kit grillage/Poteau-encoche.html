@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robex</title>
+    <link rel="stylesheet" href="Poteau-encoche.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="shortcut icon" href="/Assets/Image/LOGO ROBEX.png" type="image-logo" />
+</head>
+
+<body>
+    <header>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <div class="navigation">
+                <ul class="nav-links" id="nav-links">
+                    <li class="logo">
+                        <a href="../../index.html"><img src="../../Assets/Image/LOGO ROBEX.png" alt="logo"
+                                width="150%" /></a>
+                    </li>
+                    <li class="list">
+                        <a href="../../index.html">
+                            <span class="icon"><i class="bx bx-home"></i></span>
+                            <span class="text">Accueil</span>
+                        </a>
+                    </li>
+                    <li class="list active">
+                        <a href="../../produitETservice.html">
+                            <span class="icon"><i class="bx bxs-shopping-bag"></i></span>
+                            <span class="text">Produits/Services</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="../../À_propos_de_nous.html">
+                            <span class="icon"><i class="bx bx-info-circle bx-flip-horizontal"></i></span>
+                            <span class="text">À propos de nous</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="../../Contact.html">
+                            <span class="icon"><i class="bx bx-user-pin bx-flip-horizontal"></i></span>
+                            <span class="text">Contact</span>
+                        </a>
+                    </li>
+                    <li class="rechercher">
+                        <div class="loupe">
+                            <i class="bx bx-search"></i>
+                        </div>
+                        <input type="search" id="search" placeholder="Recherche... 'grillage rigide'" required onchange="ouvrirPage()" />
+                        <script src="../../recherche.js"></script>
+                    </li>
+                    <div class="box-phone">
+                        <i class="bx bxs-phone"></i>
+                        <span><strong><a href="tel:0604533437">06 04 53 34 37</a></strong></span>
+                    </div>
+                    <div class="indicateur"></div>
+                </ul>
+            </div>
+        </nav>
+        <script src="../../script.js"></script>
+        <script>
+            const list = document.querySelectorAll(".list");
+            function active() {
+                list.forEach((item) => item.classList.remove("active"));
+                this.classList.add("active");
+            }
+            list.forEach((item) => item.addEventListener("click", active));
+        </script>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+
+                <div class="details">
+                    <h1>Kit grillage rigide avec poteaux à encoche au ML</h1>
+                    <p>⚡ Le système innovant pour une installation rapide et efficace, vendu au mètre linéaire !
+                        ⚡<br><br>
+
+                        Ce kit de grillage rigide avec poteaux à encoches est la solution idéale pour une pose
+                        simplifiée sans fixations supplémentaires. Grâce aux encoches pré-découpées, les panneaux
+                        s’insèrent directement dans les poteaux pour une installation ultra-rapide et un maintien
+                        optimal.<br><br>
+
+                        ✔ Grillage en acier galvanisé : Haute résistance aux intempéries et à la corrosion 🌦️<br><br>
+                        ✔ Poteaux à encoches : Fixation des panneaux sans vis ni colliers, pour un rendu épuré
+                        🏗️<br><br>
+                        ✔ Montage rapide et intuitif : Aucun besoin d’accessoires supplémentaires 🔧<br><br>
+                        ✔ Design moderne et sécurisé : Une clôture élégante et efficace 🔐<br><br>
+                        ✔ Parfait pour tous types d’environnements : Résidentiel, industriel ou agricole 🌿<br><br>
+
+                        📦 <strong>Kit complet incluant :</strong><br><br>
+                        ✅ Panneaux de grillage rigide <br><br>
+                        ✅ Poteaux à encoche à sceller<br><br>
+
+                        💡 Facilité, robustesse et esthétique réunies dans un seul kit, vendu au <strong>mètre linéaire
+                            !</strong> 💡<br><br>
+
+                        🚚 Livraison Rapide | 🛡️ Garantie 10 Ans | ♻️ 100% Recyclable
+                    </p>
+                </div>
+
+                <div class="images">
+                    <img id="mainImage" class="main-image" src="../../Assets/Image/Poteau détouré/poteau-a-encoches.png"
+                        alt="Produit">
+                    <div class="thumbnail-container">
+                        <img class="vignette" src="../../Assets/Image/Poteau détouré/poteau-a-encoches.png"
+                            onclick="changeImage('../../Assets/Image/Poteau détouré/poteau-a-encoches.png')">
+                        <img class="vignette" src="../../Assets/Image/Poteau détouré/Poteau-encoche-exemple.jpg"
+                            onclick="changeImage('../../Assets/Image/Poteau détouré/Poteau-encoche-exemple.jpg')">
+                        <img class="vignette" src="../../Assets/Image/Poteau détouré/Poteau-encoche-exemple2.webp"
+                            onclick="changeImage('../../Assets/Image/Poteau détouré/Poteau-encoche-exemple2.webp')">
+                    </div>
+                </div>
+                <div class="details2">
+                    <div class="couleur">
+                        <p>Couleur : gris anthracite</p>
+                        <div class="carre"></div>
+                    </div>
+                    <div class="dimension">
+                        <label for="height">Hauteur (m) :</label>
+                        <select id="height" onchange="calculatePrice()">
+                            <option value="1.03">1.03m</option>
+                            <option value="1.23">1.23m</option>
+                            <option value="1.53">1.53m</option>
+                            <option value="1.73">1.73m</option>
+                        </select>
+                        <br>
+                        <label for="diameter">Diamètre (mm) :</label>
+                        <select id="diameter" onchange="calculatePrice()">
+                            <option value="4">4mm</option>
+                            <option value="5">5mm</option>
+                        </select>
+
+                        <label for="length">Longueur (m) :</label>
+                        <input id="length" type="number" minlength="1" onchange="calculatePrice()">
+
+                    </div>
+                    <p class="prix" id="prix">Prix totale : 17.00 € pour 1 m </p>
+                </div>
+            </div>
+
+            <script>
+                function changeImage(src) {
+                    document.getElementById('mainImage').src = src;
+                }
+
+                function calculatePrice() {
+                    let height = parseFloat(document.getElementById('height').value);
+                    let diameter = parseFloat(document.getElementById('diameter').value);
+                    let length = parseFloat(document.getElementById('length').value); // Récupération de la longueur en mètres
+
+                    let priceMap = {
+                        "1.03-4": 17, "1.23-4": 18, "1.53-4": 21, "1.73-4": 25,
+                        "1.03-5": 21, "1.23-5": 22, "1.53-5": 25, "1.73-5": 28,
+                    };
+
+                    let key = `${height}-${diameter}`;
+                    let unitPrice = priceMap[key] || null;
+
+                    if (unitPrice !== null && !isNaN(length) && length > 0) {
+                        let finalPrice = unitPrice * length;
+                        document.getElementById('prix').innerText = `Prix total : ${finalPrice.toFixed(2)} € pour ${length} m`;
+                    } else {
+                        document.getElementById('prix').innerText = "Prix non disponible ou longueur invalide";
+                    }
+                }
+            </script>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><a href="tel:0604533437">Téléphone : +33 6 04 53 34 37 </a><br><br> ou <br> <br>
+                    <a href="tel:0651542222">+33 6 51 54 22 22</a>
+                </p>
+                <p>Email : robex.industry@gmail.com</p>
+                <p>Adresse : 843 Rte de Mirecourt, 88220 Xertigny</p>
+            </div>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="../../index.html">Accueil</a></li>
+                    <li><a href="../../produitETservice.html">Produits/Services</a></li>
+                    <li><a href="../../À_propos_de_nous.html">À propos de nous</a></li>
+                    <li><a href="../../Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100064048514149"><i
+                            class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Robex. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
