@@ -33,13 +33,13 @@ Ce projet a été réalisé dans le cadre d’un travail personnel afin de mettr
 │── index.html
 │── /assets
 │ ├── /images
-│ |── Fixation et platines détourés
-│ |── Grillage détouré
-│ |── Kit grillage
-│ |── Lames
-│ |── Portails détourés
-│ |── Portillons détourés
-│ |── Poteau détouré
+│ │ ├── Fixation et platines détourés
+│ │ ├── Grillage détouré
+│ │ ├── Kit grillage
+│ │ ├── Lames
+│ │ ├── Portails détourés
+│ │ ├── Portillons détourés
+│ │ └── Poteau détouré
 │── /Pages-Produits
 │ ├── Fixations et platines
 │ ├── Grillage
@@ -49,7 +49,7 @@ Ce projet a été réalisé dans le cadre d’un travail personnel afin de mettr
 │ ├── Portails
 │ ├── Portillons
 │ └── Poteau
-│── Autre page .html et .css
+│── Autres pages (.html et .css)
 │── README.md
 
 ## Dans les dossiers se trouvent d'autre pages web.
