@@ -29,28 +29,34 @@ Ce projet a été réalisé dans le cadre d’un travail personnel afin de mettr
 
 ## 📂 Structure du projet
 
-/robex
-│── index.html
-│── /assets
-│ ├── /images
-│ │ ├── Fixation et platines détourés
-│ │ ├── Grillage détouré
-│ │ ├── Kit grillage
-│ │ ├── Lames
-│ │ ├── Portails détourés
-│ │ ├── Portillons détourés
-│ │ └── Poteau détouré
-│── /Pages-Produits
-│ ├── Fixations et platines
-│ ├── Grillage
-│ ├── Kit grillage
-│ ├── Lames
-│ ├── Piliers béton
-│ ├── Portails
-│ ├── Portillons
-│ └── Poteau
-│── Autres pages (.html et .css)
-│── README.md
+## 📂 Structure du projet
+
+## 📂 Structure du projet
+
+📂 robex  
+├─ index.html  
+📂 assets  
+│  📁 images  
+│  ├─ Fixation et platines détourés  
+│  ├─ Grillage détouré  
+│  ├─ Kit grillage  
+│  ├─ Lames  
+│  ├─ Portails détourés  
+│  ├─ Portillons détourés  
+│  └─ Poteau détouré  
+📂 Pages-Produits  
+│  📁 Fixations et platines  
+│  📁 Grillage  
+│  📁 Kit grillage  
+│  📁 Lames  
+│  📁 Piliers béton  
+│  📁 Portails  
+│  📁 Portillons  
+│  📁 Poteau  
+├─ Autres pages (.html et .css)  
+└─ README.md
+
+
 
 ## Dans les dossiers se trouvent d'autre pages web.
 
