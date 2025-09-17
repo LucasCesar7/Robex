@@ -29,10 +29,6 @@ Ce projet a été réalisé dans le cadre d’un travail personnel afin de mettr
 
 ## 📂 Structure du projet
 
-## 📂 Structure du projet
-
-## 📂 Structure du projet
-
 📂 robex  
 ├─ index.html  
 📂 assets  
@@ -55,8 +51,6 @@ Ce projet a été réalisé dans le cadre d’un travail personnel afin de mettr
 │  📁 Poteau  
 ├─ Autres pages (.html et .css)  
 └─ README.md
-
-
 
 ## Dans les dossiers se trouvent d'autre pages web.
 
